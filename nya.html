@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>meoww :3</title>
+    <script src="nya.js"></script>
+    <link rel="stylesheet" href="nya.css">
+    <link rel="icon" href="images/icons/meoww.png">
+  </head>
+  <body>
+    <div>
+      <div class="text">
+        <p class="text1">
+          add to your cart :3c
+        </p>
+        <div>
+          <button class="button" onclick="a = a + 1; m();">
+            add to cart
+          </button> <button class="button" onclick="a = a + 2; m();">
+            +2
+          </button> <button class="button" onclick="a = a + 3; m();">
+            +3
+          </button> <button class="button" onclick="a = 0; m();">
+            reset cart
+          </button>
+        </div>
+        <p class="text1 j">
+          your cart:
+        </p>
+      </div>
+      <script>
+        let a = 0;
+        a = JSON.parse(localStorage.getItem('a'));
+        document.querySelector('.j').innerText = `your cart: ${a}`;
+    </script>
+    </div>
+    <div>
+      <div class="text">
+        <p class="text1">
+          rock paper scissors :3c 
+        </p>
+        <div>
+          <button class="button" onclick="d = 'rock'; e(d); 
+            console.log(`ai pick: ${c}, your pick: ${d}`); f(c, d)">
+            ✊
+          </button> <button class="button" onclick="d = 'paper'; e(d); 
+            console.log(`ai pick: ${c}, your pick: ${d}`); f(c, d)">
+            ✋
+          </button> <button class="button" onclick="d = 'scissors'; e(d); 
+            console.log(`ai pick: ${c}, your pick: ${d}`); f(c, d)">
+            ✌️
+          </button> <button class="button" onclick="g = {
+              ties: 0,
+              wins: 0,
+              loses: 0,
+            }; localStorage.setItem('score', JSON.stringify(g));
+            document.querySelector('.k').innerHTML = `wins: ${g.wins}, ties ${g.ties}, loses: ${g.loses}`;
+            document.querySelector('.r').innerHTML = `you ⚔️ computer`">
+            reset score
+          </button>
+        </div>
+        <div class="text1 s">
+          <div class="k">
+            wins: ties: loses:
+          </div>
+          <div class="r">
+            you ⚔️ computer
+          </div>
+        </div>
+      </div>
+      <script>
+        let c = 0;
+        let d = 0;
+        let g = {
+            ties: 0,
+            wins: 0,
+            loses: 0,
+        }
+        g = JSON.parse(localStorage.getItem('score'));
+        document.querySelector('.k').innerHTML = `wins: ${g.wins}, ties ${g.ties}, loses: ${g.loses}`  
+      </script>
+    </div>
+    <div>
+      <div class="text">
+        <p class="text1">
+          calculate tax :3c
+        </p>
+        <div>
+          <input type="text" class="button i" placeholder="input" onkeydown="p();">
+          <button onclick="h();" class="button">
+            calc
+          </button>
+          <p class="text1 q">
+            calculated tax: 0$
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="text">
+      <p class="text1">
+        todon't list :3
+      </p>
+      <input type="text" placeholder="to do not" class="button nya1 nya16" onkeydown="nya9();">
+      <input type="date" class="button nya1 nya17" onkeydown="nya9();">
+      <button class="button" onclick="nya();">
+        ➕
+      </button>
+      <button class="button" onclick="nya10();">
+        ✖️
+      </button>
+      <div class="text1 nya7">
+        <div class="nya11">blank</div>
+      </div>
+    </div>
+  </body>
+</html>

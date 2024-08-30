@@ -1,0 +1,101 @@
+:root {
+    font-family: arial;
+}
+div {
+    display: inline-block;
+    vertical-align: top;
+}
+p {
+    display: inline-block;
+}
+.button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: #ffe4c4;
+    cursor: pointer;
+}
+.button:active {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: #ffe0bb;
+    transform: translate(0px, 1px);
+}
+.text {
+    margin: 10px;
+    display: flexbox;
+    width: min-content;
+    white-space: nowrap;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #fff2e1;
+    border-radius: 50px;
+}
+.text1 {
+    display: block;
+    margin: 0px 0px 10px 0px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #ffe4c4;
+    border-radius: 50px;
+}
+
+.k, .j, .q, .r, .nya7 {
+    margin: 10px 0px 0px 0px;
+    font-weight: normal;
+    text-align: left;
+    width: min-content;
+}
+.nya7 {
+    margin: none;
+    flex-direction: row;
+    column-gap: 10px;
+    width: auto;
+    display: flexbox;
+    white-space: wrap;
+}
+.nya8 {
+    display: min-content;
+    margin: 0px 10px 5px 0px;
+    text-align: left;
+    padding: 10px;
+    background-color: #ffdbae;
+    border-radius: 50px;
+}
+.k, .r {
+    margin: 0px;
+    display: flex;
+}
+.s {
+    margin: 10px 0px 0px 0px;
+    width: flex;
+}
+.nya11 {
+    opacity: 0.4;
+    font-style: italic;
+}
+.nya12 {
+    display: inline-block;
+    padding: 5px;
+    margin: 0px;
+    vertical-align: middle;
+    font-size: 13px;
+    border: none;
+    background-color: #ffd198;
+    border-radius: 50px;
+}
+.nya12:active {
+    background-color: #ffca89;
+    transform: translate(0px, 1px);
+}
+.nya20 {
+    font-weight: bold;
+    opacity: 0.5;
+    font-size: 15px;
+    vertical-align: bottom;
+}
